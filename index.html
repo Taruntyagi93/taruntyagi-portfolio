@@ -1,65 +1,206 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarun Tyagi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <header class="site-header">
+      <nav class="nav">
+        <span class="nav-name">Tarun Tyagi</span>
+        <div class="nav-links">
+          <a href="#about">about</a>
+          <a href="#experience">experience</a>
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+          <button id="theme-toggle" class="theme-btn" aria-label="toggle theme">○</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+
+      <section class="hero" id="about">
+        <div class="hero-label mono">full-stack · cloud · ai</div>
+        <h1 class="hero-name">Tarun<br>Tyagi</h1>
+        <p class="hero-role mono">Software Engineer</p>
+        <p class="hero-bio">
+          8+ years building cloud-native platforms, serverless microservices,
+          and AI evaluation pipelines. Based in Scarborough, CA. Currently
+          at <span class="hl">State Farm</span>, scaling enterprise dashboards
+          to 50k+ daily users.
+        </p>
+        <div class="hero-actions">
+          <a class="link-arrow" href="Tarun Tyagi CA.pdf" target="_blank">View résumé ↗</a>
+          <a class="link-arrow" href="mailto:taruntyagi0193@gmail.com">Get in touch ↗</a>
+        </div>
+      </section>
+
+
+      <div class="strip" id="stats-strip">
+       
+      </div>
+
+
+      <section class="section" id="experience">
+        <h2 class="section-label mono">// <Emb>Experience</Emb></h2>
+        <div class="exp-list" id="experience-list">
+        
+        </div>
+      </section>
+
+
+      <section class="section" id="skills">
+        <h2 class="section-label mono">// <Emb>Skills</Emb></h2>
+        <div class="skill-categories" id="skill-categories">
+
+        </div>
+      </section>
+
+
+      <section class="section" id="projects">
+        <h2 class="section-label mono">// <Emb>Projects</Emb></h2>
+        <div class="proj-list" id="project-list">
+   
+        </div>
+      </section>
+
+
+      <section class="section" id="education">
+        <h2 class="section-label mono">// <Emb>Education</Emb></h2>
+        <div class="edu-list" id="education-list">
+      
+        </div>
+      </section>
+
+  
+      <section class="section contact-section" id="contact">
+        <h2 class="section-label mono">// <Emb>Contact</Emb></h2>
+        <div class="contact-grid" id="contact-card">
+      
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <span class="mono">Made by Tarun Tyagi with ❤️ . <span id="year"></span></span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarun Tyagi | Portfolio</title>
+  <title>Tarun Tyagi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero-panel">
-      <div class="hero-copy">
-        <p class="eyebrow">Dynamic portfolio powered by JSON data</p>
-        <h1 id="hero-name">Tarun Tyagi</h1>
-        <p id="hero-title">Chartered Accountant</p>
-        <p id="hero-summary" class="summary"></p>
-        <div class="hero-buttons">
-          <a class="btn btn-primary" id="resume-link" href="Tarun Tyagi CA.pdf" target="_blank">View Resume</a>
-          <button class="btn btn-secondary" id="theme-toggle">Switch theme</button>
+  <div class="shell">
+
+    <header class="site-header">
+      <nav class="nav">
+        <span class="nav-name">Tarun Tyagi</span>
+        <div class="nav-links">
+          <a href="#about">about</a>
+          <a href="#experience">experience</a>
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+          <button id="theme-toggle" class="theme-btn" aria-label="toggle theme">○</button>
         </div>
-      </div>
-      <div class="hero-visual">
-        <div class="stats-grid" id="stats-grid"></div>
-      </div>
+      </nav>
     </header>
 
-    <main class="content-grid">
-      <section class="panel" id="experience-panel">
-        <h2>Experience</h2>
-        <div class="timeline" id="experience-list"></div>
-      </section>
+    <main>
 
-      <section class="panel" id="education-panel">
-        <h2>Education</h2>
-        <div class="cards" id="education-list"></div>
-      </section>
-
-      <section class="panel" id="skills-panel">
-        <h2>Skills & analytics</h2>
-        <div class="chart-panel">
-          <div class="skill-list" id="skill-list"></div>
-          <div class="visual-summary">
-            <h3>Skill coverage</h3>
-            <div class="skill-chart" id="skill-chart"></div>
-          </div>
+      <!-- HERO -->
+      <section class="hero" id="about">
+        <div class="hero-label mono">full-stack · cloud · ai</div>
+        <h1 class="hero-name">Tarun<br>Tyagi</h1>
+        <p class="hero-role mono">Software Engineer</p>
+        <p class="hero-bio">
+          8+ years building cloud-native platforms, serverless microservices,
+          and AI evaluation pipelines. Based in Scarborough, CA. Currently
+          at <span class="hl">State Farm</span>, scaling enterprise dashboards
+          to 50k+ daily users.
+        </p>
+        <div class="hero-actions">
+          <a class="link-arrow" href="Tarun Tyagi CA.pdf" target="_blank">View résumé ↗</a>
+          <a class="link-arrow" href="mailto:taruntyagi0193@gmail.com">Get in touch ↗</a>
         </div>
       </section>
 
-      <section class="panel" id="projects-panel">
-        <h2>Projects</h2>
-        <div class="cards" id="project-list"></div>
+      <!-- STATS STRIP -->
+      <div class="strip" id="stats-strip">
+        <!-- injected by JS -->
+      </div>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <h2 class="section-label mono">// <em>Experience</em></h2>
+        <div class="exp-list" id="experience-list">
+          <!-- injected -->
+        </div>
       </section>
 
-      <section class="panel contact-panel">
-        <h2>Contact</h2>
-        <div class="contact-card" id="contact-card"></div>
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <h2 class="section-label mono">// <em>Skills</em></h2>
+        <div class="skill-categories" id="skill-categories">
+          <!-- injected by JS -->
+        </div>
       </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <h2 class="section-label mono">// <em>Projects</em></h2>
+        <div class="proj-list" id="project-list">
+          <!-- injected -->
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section" id="education">
+        <h2 class="section-label mono">// <em>Education</em></h2>
+        <div class="edu-list" id="education-list">
+          <!-- injected -->
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section" id="contact">
+        <h2 class="section-label mono">// <em>Contact</em></h2>
+        <div class="contact-grid" id="contact-card">
+          <!-- injected -->
+        </div>
+      </section>
+
     </main>
 
-    <footer class="footer-note">
-      <p>Portfolio generated dynamically from <code>data/resume.json</code>. Update the JSON file to refresh content.</p>
+    <footer class="footer">
+      <span class="mono">Made by Tarun Tyagi with ❤️ · <span id="year"></span></span>
     </footer>
+
   </div>
 
   <script src="script.js"></script>

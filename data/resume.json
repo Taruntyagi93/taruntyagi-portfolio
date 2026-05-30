@@ -5,8 +5,8 @@
   "resumePdf": "Tarun Tyagi CA.pdf",
   "stats": [
     { "label": "Years of experience", "value": "8+" },
-    { "label": "Daily active users supported", "value": "50k+" },
-    { "label": "AI regression pipelines", "value": "1+" },
+    { "label": "Daily active users", "value": "50k+" },
+    { "label": "AI pipelines built", "value": "1+" },
     { "label": "Cloud services used", "value": "10+" }
   ],
   "experience": [
@@ -39,26 +39,37 @@
     {
       "title": "Master of Science in Software Engineering",
       "subtitle": "San Jose State University, San Jose, CA",
-      "description": "Completed advanced coursework in cloud-native application development, software architecture, and AI platform engineering. GPA: 3.73 / 4.00"
+      "description": "Advanced coursework in cloud-native application development, software architecture, and AI platform engineering. GPA: 3.73 / 4.00"
     },
     {
       "title": "Bachelor of Technology in Computer Science & Engineering",
       "subtitle": "MDU University, India",
-      "description": "Studied software development, distributed systems, and database engineering. GPA: 3.90 / 4.00"
+      "description": "Software development, distributed systems, and database engineering. GPA: 3.90 / 4.00"
     }
   ],
-  "skills": [
-    { "name": "React.js & Frontend", "level": 94, "note": "React, Redux, Vue.js, D3.js, HTML5, CSS3." },
-    { "name": "Node.js & APIs", "level": 92, "note": "REST, GraphQL, microservices, AWS Lambda." },
-    { "name": "Cloud & DevOps", "level": 90, "note": "AWS, Terraform, CI/CD, GitOps, CloudWatch." },
-    { "name": "AI / LLM Automation", "level": 88, "note": "AWS Bedrock Agents, promptfoo, regression testing." },
-    { "name": "Databases & Data", "level": 89, "note": "DynamoDB, MongoDB, MSSQL, Redshift." }
+  "skillCategories": [
+    {
+      "label": "Languages",
+      "items": ["JavaScript", "TypeScript", "Python", "SQL"]
+    },
+    {
+      "label": "Frontend",
+      "items": ["React", "Vue.js", "Redux", "D3.js", "HTML5", "CSS3"]
+    },
+    {
+      "label": "Backend",
+      "items": ["Node.js", "GraphQL", "REST APIs", "AWS Lambda", "DynamoDB", "MongoDB"]
+    },
+    {
+      "label": "Tools & Cloud",
+      "items": ["AWS Lambda", "Amazon S3", "DynamoDB", "Elastic Search", "VPC", "Route53", "CloudFront", "API Gateway", "Kinesis", "CloudWatch", "CloudTrail", "Step Function", "Glue Job", "Terraform", "Docker", "Git", "CI/CD", "VS Code"]
+    }
   ],
   "projects": [
     {
       "title": "AI Evaluation Pipeline",
       "subtitle": "AWS Bedrock / promptfoo integration",
-      "description": "Built automated regression testing for LLM and AI Agents, integrating judge scoring into CI/CD and reducing AI regression escapes by 60%."
+      "description": "Automated regression testing for LLM and AI Agents, integrating judge scoring into CI/CD and reducing AI regression escapes by 60%."
     },
     {
       "title": "Serverless Dashboard Platform",
@@ -68,13 +79,14 @@
     {
       "title": "Job Marketplace Platform",
       "subtitle": "Vue.js + AWS S3 media upload pipeline",
-      "description": "Delivered a multi-user job marketplace with secure file uploads, role-based views, and MongoDB-backed dynamic profile workflows."
+      "description": "Multi-user job marketplace with secure file uploads, role-based views, and MongoDB-backed dynamic profile workflows."
     }
   ],
   "contact": {
     "Email": "taruntyagi0193@gmail.com",
     "Phone": "812-391-6150",
     "Location": "Scarborough, CA",
+    "GitHub": "github.com/Taruntyagi93",
     "LinkedIn": "linkedin.com/in/tarun-tyagi-018a4549"
   }
 }
