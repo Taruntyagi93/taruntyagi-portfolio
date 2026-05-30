@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarun Tyagi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Dynamic portfolio powered by JSON data</p>
+        <h1 id="hero-name">Tarun Tyagi</h1>
+        <p id="hero-title">Chartered Accountant</p>
+        <p id="hero-summary" class="summary"></p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" id="resume-link" href="Tarun Tyagi CA.pdf" target="_blank">View Resume</a>
+          <button class="btn btn-secondary" id="theme-toggle">Switch theme</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="stats-grid" id="stats-grid"></div>
+      </div>
+    </header>
+
+    <main class="content-grid">
+      <section class="panel" id="experience-panel">
+        <h2>Experience</h2>
+        <div class="timeline" id="experience-list"></div>
+      </section>
+
+      <section class="panel" id="education-panel">
+        <h2>Education</h2>
+        <div class="cards" id="education-list"></div>
+      </section>
+
+      <section class="panel" id="skills-panel">
+        <h2>Skills & analytics</h2>
+        <div class="chart-panel">
+          <div class="skill-list" id="skill-list"></div>
+          <div class="visual-summary">
+            <h3>Skill coverage</h3>
+            <div class="skill-chart" id="skill-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="projects-panel">
+        <h2>Projects</h2>
+        <div class="cards" id="project-list"></div>
+      </section>
+
+      <section class="panel contact-panel">
+        <h2>Contact</h2>
+        <div class="contact-card" id="contact-card"></div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      <p>Portfolio generated dynamically from <code>data/resume.json</code>. Update the JSON file to refresh content.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

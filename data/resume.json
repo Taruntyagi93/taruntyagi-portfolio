@@ -1,0 +1,80 @@
+{
+  "name": "Tarun Tyagi",
+  "title": "Full Stack Software Engineer",
+  "summary": "Full stack engineer with 8+ years building cloud-native web platforms, serverless microservices, and modern AI evaluation pipelines. Experienced creating scalable apps, high-performance data visualizations, and automated CI/CD workflows for enterprise systems.",
+  "resumePdf": "Tarun Tyagi CA.pdf",
+  "stats": [
+    { "label": "Years of experience", "value": "8+" },
+    { "label": "Daily active users supported", "value": "50k+" },
+    { "label": "AI regression pipelines", "value": "1+" },
+    { "label": "Cloud services used", "value": "10+" }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer — Full Stack & AI Platform",
+      "company": "State Farm (ARV Systems)",
+      "range": "Oct 2020 – Present",
+      "description": "Designed scalable React.js + TypeScript frontends and Node.js serverless backends on AWS, delivering enterprise dashboards with 99.9% uptime and supporting 50k+ daily users."
+    },
+    {
+      "role": "Web Development Engineer",
+      "company": "Blinkpad Inc.",
+      "range": "Jul 2020 – Oct 2020",
+      "description": "Built a Vue.js job marketplace platform with role-based access control, secure AWS S3 media uploads, and MongoDB-backed profile management for business and candidate workflows."
+    },
+    {
+      "role": "Graduate Engineer — Frontend",
+      "company": "Aon Hewitt",
+      "range": "Jun 2016 – Oct 2017",
+      "description": "Developed React.js dashboards and D3.js visualizations for employee sentiment analytics, optimized large-scale data flows, and automated survey dataset validation and ETL pipelines."
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Wipro",
+      "range": "May 2015 – Jun 2016",
+      "description": "Delivered responsive React.js/JavaScript web applications, integrated REST APIs, and improved frontend performance through rendering optimizations and client-side validation."
+    }
+  ],
+  "education": [
+    {
+      "title": "Master of Science in Software Engineering",
+      "subtitle": "San Jose State University, San Jose, CA",
+      "description": "Completed advanced coursework in cloud-native application development, software architecture, and AI platform engineering. GPA: 3.73 / 4.00"
+    },
+    {
+      "title": "Bachelor of Technology in Computer Science & Engineering",
+      "subtitle": "MDU University, India",
+      "description": "Studied software development, distributed systems, and database engineering. GPA: 3.90 / 4.00"
+    }
+  ],
+  "skills": [
+    { "name": "React.js & Frontend", "level": 94, "note": "React, Redux, Vue.js, D3.js, HTML5, CSS3." },
+    { "name": "Node.js & APIs", "level": 92, "note": "REST, GraphQL, microservices, AWS Lambda." },
+    { "name": "Cloud & DevOps", "level": 90, "note": "AWS, Terraform, CI/CD, GitOps, CloudWatch." },
+    { "name": "AI / LLM Automation", "level": 88, "note": "AWS Bedrock Agents, promptfoo, regression testing." },
+    { "name": "Databases & Data", "level": 89, "note": "DynamoDB, MongoDB, MSSQL, Redshift." }
+  ],
+  "projects": [
+    {
+      "title": "AI Evaluation Pipeline",
+      "subtitle": "AWS Bedrock / promptfoo integration",
+      "description": "Built automated regression testing for LLM and AI Agents, integrating judge scoring into CI/CD and reducing AI regression escapes by 60%."
+    },
+    {
+      "title": "Serverless Dashboard Platform",
+      "subtitle": "AWS Lambda microservices",
+      "description": "Implemented 25+ serverless APIs with Node.js, DynamoDB, Redshift, and S3 to serve realtime and historical enterprise dashboards."
+    },
+    {
+      "title": "Job Marketplace Platform",
+      "subtitle": "Vue.js + AWS S3 media upload pipeline",
+      "description": "Delivered a multi-user job marketplace with secure file uploads, role-based views, and MongoDB-backed dynamic profile workflows."
+    }
+  ],
+  "contact": {
+    "Email": "taruntyagi0193@gmail.com",
+    "Phone": "812-391-6150",
+    "Location": "Scarborough, CA",
+    "LinkedIn": "linkedin.com/in/tarun-tyagi-018a4549"
+  }
+}
