@@ -251,6 +251,7 @@ a { color: inherit; text-decoration: none; }
 .exp-desc {
   font-size: 0.92rem;
   /* color: var(--muted); */
+  color: var(--fg);
   line-height: 1.7;
 }
 
