@@ -1,18 +1,12 @@
 const resumePath = 'data/resume.json';
 const html = document.documentElement;
 
-/* ── EmailJS config ──────────────────────────────────────
- *  1. Sign up free at https://www.emailjs.com
- *  2. Create a service (connect your Gmail)
- *  3. Create an email template — use these variables:
- *       {{from_name}}, {{from_email}}, {{subject}}, {{message}}
- *  4. Replace the three values below with your own IDs
- * ─────────────────────────────────────────────────────── */
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'abc123XYZ'
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_xxxxxx'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xxxxxx'
 
-/* ── theme ──────────────────────────────────────────── */
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';  
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  
+
+
 function initTheme() {
   const stored = localStorage.getItem('tt_theme');
   if (stored === 'light') html.classList.add('light');
@@ -24,13 +18,6 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
   updateIconTheme();
 });
 
-/* ── icon system ─────────────────────────────────────────
- *  Two strategies:
- *  1. { slug, light, dark } → Simple Icons CDN img tag
- *  2. { svg } → raw inline SVG string (for icons not in Simple Icons)
- * ─────────────────────────────────────────────────────── */
-
-/* Inline SVGs for icons not available on Simple Icons CDN */
 const INLINE_SVGS = {
   'CSS3': `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path fill="#1572B6" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
@@ -135,7 +122,6 @@ function updateIconTheme() {
   });
 }
 
-/* ── fetch ──────────────────────────────────────────── */
 async function fetchResume() {
   try {
     const r = await fetch(resumePath);
@@ -147,7 +133,6 @@ async function fetchResume() {
   }
 }
 
-/* ── renderers ──────────────────────────────────────── */
 function renderStats(stats) {
   const el = document.getElementById('stats-strip');
   el.innerHTML = stats.map(s => `
@@ -257,9 +242,8 @@ function renderContact(contact) {
   }).join('');
 }
 
-/* ── contact form (EmailJS) ──────────────────────────── */
 function initContactForm() {
-  // Initialize EmailJS with your public key
+
   emailjs.init(EMAILJS_PUBLIC_KEY);
 
   const form      = document.getElementById('contact-form');
@@ -273,7 +257,6 @@ function initContactForm() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Basic client-side validation
     const name    = document.getElementById('contact-name').value.trim();
     const email   = document.getElementById('contact-email').value.trim();
     const subject = document.getElementById('contact-subject').value.trim();
@@ -284,7 +267,6 @@ function initContactForm() {
       return;
     }
 
-    // Loading state
     submitBtn.disabled = true;
     btnText.style.display = 'none';
     spinner.style.display = 'inline-block';
@@ -317,7 +299,6 @@ function initContactForm() {
   }
 }
 
-/* ── reveal observer ────────────────────────────────── */
 function initReveal() {
   const targets = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver((entries, o) => {
@@ -332,7 +313,6 @@ function initReveal() {
   targets.forEach(t => obs.observe(t));
 }
 
-/* ── boot ────────────────────────────────────────────── */
 document.getElementById('year').textContent = new Date().getFullYear();
 initTheme();
 

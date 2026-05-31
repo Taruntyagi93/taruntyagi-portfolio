@@ -1,4 +1,3 @@
-/* ─── tokens ─────────────────────────────────────────── */
 :root {
   --bg: #0d0d0d;
   --fg: #e8e6e1;
@@ -21,7 +20,6 @@ html.light {
   --line: rgba(0,0,0,0.1);
 }
 
-/* ─── reset ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -38,14 +36,12 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ─── shell ───────────────────────────────────────────── */
 .shell {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 28px 120px;
 }
 
-/* ─── nav ─────────────────────────────────────────────── */
 .site-header {
   position: sticky;
   top: 0;
@@ -105,7 +101,6 @@ a { color: inherit; text-decoration: none; }
 
 .theme-btn:hover { border-color: var(--fg); color: var(--fg); }
 
-/* ─── hero ────────────────────────────────────────────── */
 .hero {
   padding: 96px 0 72px;
 }
@@ -164,7 +159,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.08em;
 }
 
-/* ─── stats strip ─────────────────────────────────────── */
 .strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -198,7 +192,6 @@ a { color: inherit; text-decoration: none; }
   margin-top: 4px;
 }
 
-/* ─── sections ────────────────────────────────────────── */
 .section {
   padding: 72px 0 0;
 }
@@ -217,7 +210,6 @@ a { color: inherit; text-decoration: none; }
   font-style: normal;
 }
 
-/* ─── experience ──────────────────────────────────────── */
 .exp-list {
   display: grid;
   gap: 52px;
@@ -262,7 +254,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.7;
 }
 
-/* ─── skills — categorised ────────────────────────────── */
 .skill-categories {
   display: grid;
   gap: 48px;
@@ -314,7 +305,6 @@ html.light .skill-chip:hover {
   background: rgba(0,0,0,0.03);
 }
 
-/* ─── icon image & inline SVG ────────────────────────── */
 .skill-chip-icon {
   width: 18px;
   height: 18px;
@@ -360,7 +350,6 @@ html.light .skill-chip:hover {
   color: var(--fg);
 }
 
-/* ─── projects ────────────────────────────────────────── */
 .proj-list {
   display: grid;
   gap: 0;
@@ -410,7 +399,6 @@ html.light .skill-chip:hover {
 
 .proj-item:hover .proj-arrow { color: var(--accent); }
 
-/* ─── education ───────────────────────────────────────── */
 .edu-list {
   display: grid;
   gap: 36px;
@@ -438,7 +426,6 @@ html.light .skill-chip:hover {
   line-height: 1.6;
 }
 
-/* ─── contact ─────────────────────────────────────────── */
 .contact-section {
   padding-bottom: 0;
 }
@@ -508,7 +495,6 @@ html.light .skill-chip:hover {
   height: 18px;
 }
 
-/* ─── inline contact form ─────────────────────────────── */
 .inline-contact-form {
   margin-top: 56px;
   padding-top: 48px;
@@ -534,7 +520,6 @@ html.light .skill-chip:hover {
   gap: 20px;
 }
 
-/* two-column row for name + email */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -627,7 +612,6 @@ html.light .skill-chip:hover {
   transform: none;
 }
 
-/* loading spinner */
 .spinner {
   width: 14px;
   height: 14px;
@@ -643,7 +627,6 @@ html.light .skill-chip:hover {
   to { transform: rotate(360deg); }
 }
 
-/* status messages */
 .form-status {
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -659,7 +642,6 @@ html.light .skill-chip:hover {
   color: #cc6666;
 }
 
-/* ─── footer ──────────────────────────────────────────── */
 .footer {
   margin-top: 80px;
   padding: 24px 0 0;
@@ -672,7 +654,6 @@ html.light .skill-chip:hover {
 
 .mono { font-family: var(--mono); }
 
-/* ─── reveal ──────────────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -681,7 +662,6 @@ html.light .skill-chip:hover {
 
 .reveal.in { opacity: 1; transform: none; }
 
-/* ─── responsive ──────────────────────────────────────── */
 @media (max-width: 600px) {
   .shell { padding: 0 20px 80px; }
 
