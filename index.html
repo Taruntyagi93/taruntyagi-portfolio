@@ -39,8 +39,8 @@
           to 50k+ daily users.
         </p>
         <div class="hero-actions">
-          <a class="link-arrow" href="Tarun Tyagi CA.pdf" target="_blank">View résumé ↗</a>
-          <a class="link-arrow" href="mailto:taruntyagi0193@gmail.com">Get in touch ↗</a>
+          <a class="link-arrow" href="data/TarunTyagi.pdf" download>View résumé ↗</a>
+          <a class="link-arrow" href="#" id="contact-trigger">Get in touch ↗</a>
         </div>
       </section>
 
@@ -95,6 +95,40 @@
       <span class="mono">Made by Tarun Tyagi with ❤️ · <span id="year"></span></span>
     </footer>
 
+  </div>
+
+  <!-- CONTACT FORM MODAL -->
+  <div class="contact-modal" id="contact-modal">
+    <div class="contact-modal-content">
+      <button class="contact-modal-close" id="contact-modal-close">&times;</button>
+      <h3>Send me a message</h3>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="contact-email">Your Email</label>
+          <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" placeholder="How can I help you?" required />
+        </div>
+        
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" placeholder="Your message here..." rows="6" required></textarea>
+        </div>
+        
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
+      <div class="contact-success" id="contact-success" style="display: none;">
+        <p>✓ Message sent! I'll get back to you soon.</p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
